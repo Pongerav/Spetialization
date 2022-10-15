@@ -11,3 +11,16 @@ for (int i = 0; i < length; i += 1)
     massiv[i] = Console.ReadLine() ?? "";
     if (massiv[i].Length <= 3) count += 1;
 }
+
+string[] array = new string[count];
+int j = 0;
+
+for (int i = 0; i < length; i += 1)
+{
+    if (massiv[i].Length <= 3) 
+    {
+        array[j] = massiv[i];
+        Console.WriteLine(array[j]);
+        j += 1;
+    }
+}
